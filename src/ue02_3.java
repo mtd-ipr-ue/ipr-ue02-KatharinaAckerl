@@ -17,7 +17,7 @@ public class ue02_3 {
         double Circle = (Math.PI * radius * radius)/4;
 
         if ((x <= 4 && x >= 0) && (y <= 4 && y >= 0)) {
-            if (x*y > Circle) {
+            if (Math.sqrt(x*x+y*y) > radius ) {
                 Out.println("The cordinates are inside the green area");
                 }
             else {
